@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Nimrodel Pub Restaurant</title>
+		<!-- BOOTSTRAP CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+			integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+		<!-- BOOTSTRAP JS -->
+		<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+			crossorigin="anonymous"></script>
+		<link rel="icon" type="image/x-icon" href="./assets/images/n.png">
+		<link rel="stylesheet" href="./assets/css/styles.css">
+	</head>
+	<!-- to avoid to really small screen use minwidth in the body -->
+
+	<body>
+
+		<!-- NAVBAR -->
+		<header>
+			<nav class="navbar navbar-expand-md bg-transparent bg-dark">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#">
+						<img src="./assets/images/n.png" alt="logo" width="90" height="72">
+					</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-theme="dark"
+						data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+						aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link text-white" aria-current="page" href="#">Nuestros productos</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-white" href="#" data-bs-toggle="modal" data-bs-target="#modalAbout">Sobre
+									nosotros</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-white" id="contact" href="#contactForm">Contactamos!</a>
+							</li>
+							<li class="nav-item ">
+								<a class="nav-link text-white" id="booking" href="#reservationForm">Reserva</a>
+							</li>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<!-- MODAL ABOUT-->
+		<div id="modalAbout" class="modal fade" tabindex="-1" aria-labelledby="modalAbout" aria-hidden="true">
+			<div class="modal-dialog modal-lg modal-dialog-centered">
+				<div class="modal-content bg-dark text-white text-center p-2 m-2">
+					<div class="container-fluid align-items-center justify-content-center">
+						<div id="carouselAbout" class="carousel slide">
+							<div class="carousel-inner">
+								<h2>Nimrodel Pub Restaurant</h2>
+								<div class="carousel-item carousel-item-nav mb-4 active">
+									<div class="carousel-caption d-md-block">
+										<!-- <p>“Nimrodel Significa “dama de la cueva blanca”. Fue una elfa silvana que vivió durante la Tercera
+											Edad del Sol en el bosque de Lothlórien. En honor a su nombre, se acuña Nimrodel al río que nace
+											en
+											las Montañas Nubladas”.</p> -->
+									</div>
+									<img src="./assets/images/IMG2.jpg" class="rounded" alt="carousel image">
+								</div>
+								<div class="carousel-item carousel-item-nav mb-4">
+									<div class="carousel-caption d-md-block">
+										<!-- <p>“Nimrodel Pub Restaurant es un oasis de calma y diversión, lleno de rincones acogedores
+											en donde se resalta la belleza de su decoración élfica.
+											Es un lugar ideal para visitar solo o acompañado, disfrutar una tarde con amigos, terminar
+											el día después del trabajo o almorzar con tu familia.
+											Puedes probar nuestras tradicionales tablas, en todas sus variedades y que nos han
+											otorgado reconocimiento dentro de la cultura gastronómica.
+											También puedes disfrutar nuestras cervezas de fabricación propia, con sabores que te
+											llevarán a un mágico mundo.”</p> -->
+									</div>
+									<img src="./assets/images/IMG1.jpg" class="rounded" alt="carousel image">
+								</div>
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselAbout" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselAbout" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<!-- MODAL ABOUT END -->
+		<!-- NAVBAR END -->
+		<main>
+			<!-- TITLE -->
+			<section class="m-4 p-4">
+				<h1 class="h1 text-center m-1 p-1 text-body-tertiary">Nimrodel Pub Restaurant</h1>
+				<h5 class="h5 text-center m-1 p-1">Destacados de la semana</h5>
+			</section>
+			<!-- TITLE END-->
+			<!-- CARDS -->
+			<section class="cards d-sm-flex">
+				<div class="card" style="width: 18rem;">
+					<a href="#" data-bs-toggle="modal" data-bs-target="#modalImage1">
+						<img src="https://img.freepik.com/foto-gratis/bebidas-gaseosas-coloridas-macro-disparo_53876-18225.jpg"
+							class="card-img-top mb-4 rounded" alt="card">
+					</a>
+					<div class="card-body">
+						<h4 class="card-title">Gaseosas</h4>
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+					</div>
+				</div>
+				<div class="card" style="width: 18rem;">
+					<a href="#" data-bs-toggle="modal" data-bs-target="#modalImage2">
+						<img
+							src="https://images.unsplash.com/photo-1577308856961-8e9ec50d0c67?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+							class="card-img-top mb-4 rounded" alt="card">
+					</a>
+					<div class="card-body">
+						<h4 class="card-title">Tablas</h4>
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+					</div>
+				</div>
+				<div class="card" style="width: 18rem;">
+					<a href="#" data-bs-toggle="modal" data-bs-target="#modalImage3">
+						<img
+							src="https://media.istockphoto.com/id/1125087566/photo/beer-flight-in-summer-sunlight.jpg?s=612x612&w=0&k=20&c=YgHGdvKZLScrs3X6n36rnyBvDYtQLKtxW5hzXfEv7eE="
+							class="card-img-top mb-4 rounded" alt="card">
+					</a>
+					<div class="card-body">
+						<h4 class="card-title">Shops</h4>
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+					</div>
+				</div>
+			</section>
+			<!-- CARDS END -->
+			<!-- MODAL -->
+			<section>
+				<div id="modalImage1" class="modal fade" tabindex="-1" aria-labelledby="modalImage1" aria-hidden="true">
+					<div class="modal-dialog modal-lg modal-dialog-centered">
+						<div class="modal-content bg-dark text-white text-center p-2 m-2">
+							<h4 class="card-title text-uppercase mb-4">Gaseosas</h4>
+							<img src="https://img.freepik.com/foto-gratis/bebidas-gaseosas-coloridas-macro-disparo_53876-18225.jpg"
+								class="card-img-top  mb-4 rounded" alt="card">
+							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+						</div>
+					</div>
+				</div>
+				<div id="modalImage2" class="modal fade" tabindex="-1" aria-labelledby="modalImage2" aria-hidden="true">
+					<div class="modal-dialog modal-lg modal-dialog-centered">
+						<div class="modal-content bg-dark text-white text-center p-2 m-2">
+							<h4 class="card-title text-uppercase mb-4">Tablas</h4>
+							<img
+								src="https://images.unsplash.com/photo-1577308856961-8e9ec50d0c67?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+								class="card-img-top  mb-4 rounded" alt="card">
+							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+						</div>
+					</div>
+				</div>
+				<div id="modalImage3" class="modal fade" tabindex="-1" aria-labelledby="modalImage3" aria-hidden="true">
+					<div class="modal-dialog modal-lg modal-dialog-centered">
+						<div class="modal-content bg-dark text-white text-center p-2 m-2">
+							<h4 class="card-title text-uppercase mb-4">Tablas</h4>
+							<img
+								src="https://media.istockphoto.com/id/1125087566/photo/beer-flight-in-summer-sunlight.jpg?s=612x612&w=0&k=20&c=YgHGdvKZLScrs3X6n36rnyBvDYtQLKtxW5hzXfEv7eE="
+								class="card-img-top  mb-4 rounded" alt="card">
+							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- MODAL END -->
+			<!-- CONTACT -->
+			<section id="contactForm" class="cards form d-none d-md-flex">
+				<div class="card" style="width: 28rem;">
+					<form id="formC" class="formclass" action="./index.html" method="get">
+						<h2 class="text-center">Comuniquemosnos!</h2>
+						<div class="mb-3">
+							<label for="name" class="form-label">Nombre</label>
+							<!-- pattern="^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$" required -->
+							<input type="text" class="form-control" id="name" placeholder="Maria Vargas">
+						</div>
+						<div class="mb-3">
+							<label for="contactEmail" class="form-label">Correo</label>
+							<!-- pattern="^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$" required -->
+							<input type="email" class="form-control" id="contactEmail" placeholder="mariavargas@correo.com"
+								aria-describedby="emailHelp">
+						</div>
+						<div class="mb-3">
+							<label for="contactPhone" class="form-label">Teléfono</label>
+							<!-- pattern="^[5-9]{1}[0-9]{8}$" required -->
+							<input type="text" class="form-control" id="contactPhone" placeholder="951236874">
+						</div>
+						<label for="list" class="form-label">Motivos</label>
+						<select class="form-select" id="list" aria-label="Default select example">
+							<option selected></option>
+							<option value="1">Consultas</option>
+							<option value="2">Felicitaciones</option>
+							<option value="3">Reclamos</option>
+							<option value="4">Sugerencias</option>
+						</select>
+						<div class="mb-3">
+							<!-- <label for="explanation" class="form-label">Example textarea</label> -->
+							<label for="explanation" class="form-label">Detalles</label>
+							<textarea class="form-control" id="explanation" rows="4"></textarea>
+						</div>
+						<button type="submit" class="btn btn-light">Enviar</button>
+					</form>
+				</div>
+			</section>
+			<!-- CONTACT END -->
+			<!-- RESERVATION -->
+			<section id="reservationForm" class="cards form d-none d-md-flex">
+				<div class="card" style="width: 28rem;">
+					<form id="formR" class="formclass" action="./index.html" method="get">
+						<h2 class="text-center">Reservas</h2>
+						<div class="mb-3">
+							<label for="nameReservation" class="form-label">Nombre</label>
+							<!-- pattern="^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$" required -->
+							<input type="text" class="form-control" id="nameReservation" placeholder="Maria Vargas">
+						</div>
+						<div class="mb-3">
+							<label for="emailReservation" class="form-label">Correo</label>
+							<!-- pattern="^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$" required -->
+							<input type="email" class="form-control" id="emailReservation" placeholder="mariavargas@correo.com"
+								aria-describedby="emailHelp">
+						</div>
+						<div class="mb-3">
+							<label for="phoneReservation" class="form-label">Teléfono</label>
+							<!-- pattern="^[5-9]{1}[0-9]{8}$" required -->
+							<input type="text" class="form-control" id="phoneReservation" placeholder="951236874">
+						</div>
+						<div class="mb-3">
+							<label for="time" class="form-label">Hora</label>
+							<input type="time" class="form-control" id="time" name="time">
+						</div>
+						<!-- https://github.com/Frontend-Paathshala/Datepicker-Bootstrap-5/blob/main/index.html -->
+						<div class="mb-3">
+							<label for="date" class="form-label">Fecha</label>
+							<input type="date" class="form-control" id="date" name="date">
+						</div>
+						<div class="mb-3">
+							<label for="customers" class="form-label">Cantidad de Asistentes</label>
+							<input type="text" class="form-control" id="customers" name="customers"
+								placeholder="Cantidad de personas">
+						</div>
+						<button type="submit" class="btn btn-light">Reservar</button>
+					</form>
+				</div>
+			</section>
+			<!-- RESERVATION END -->
+			<!-- CARRUSEL -->
+			<section class="container-fluid align-items-center justify-content-center">
+				<div id="carouselEndPage" class="carousel slide">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img
+								src="https://images.unsplash.com/photo-1558670426-931963635470?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80"
+								class="rounded h-100" alt="carousel image">
+						</div>
+						<div class="carousel-item">
+							<img
+								src="https://images.unsplash.com/photo-1615719413546-198b25453f85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=436&q=80"
+								class="rounded h-100" alt="carousel image">
+						</div>
+						<div class="carousel-item">
+							<img
+								src="https://images.unsplash.com/photo-1582728338411-6c8d9777e119?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YWxjaG9ob2x8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+								class="rounded h-100" alt="carousel image">
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselEndPage" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselEndPage" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</section>
+			<!-- CARRUSEL END -->
+		</main>
+		<!-- FOOTER -->
+		<footer>
+			<em>Todos los derechos reservados &#174;</em>
+		</footer>
+		<!-- FOOTER END -->
+		<!-- JQUERY -->
+		<script src="https://code.jquery.com/jquery-3.6.4.min.js"
+			integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+		<script src="./assets/js/app.js"></script>
+	</body>
+
+</html>
